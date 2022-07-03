@@ -14,4 +14,5 @@ def find_all_users_id(data: dict)->list:
         id1 = i.get('from_id', False)
         if id1 and id1 not in actor_id:
             actor_id.append(i.get('from_id'))
+    return actor_id
 data = read_data("data/result.json")
